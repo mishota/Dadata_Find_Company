@@ -1,6 +1,6 @@
 const token = "aa5b9386c01093221626a38f461ace4e52fb769a";
 
-const url =
+const urlFoSearching =
   "https://suggestions.dadata.ru/suggestions/api/4_1/rs/findById/party";
 
 const urlForSuggest =
