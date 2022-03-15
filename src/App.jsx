@@ -24,8 +24,6 @@ function App() {
 
   const handleInnChange = async (event) => {
     const companies = await MainFetchApi.findCompanies(event.target.value);
-    console.warn("companies", companies);
-
     if (companies.length > 0) {
       setOptions(companies);
       setIsOpen(true);
@@ -70,7 +68,6 @@ function App() {
         <div className={isOpen ? "visible" : "hidden"}>
           <datalist
             onClick={handleSelect}
-            onSelect={handleSelect}
             style={{ display: isOpen ? "block" : "none" }}
           >
             {isOpen &&

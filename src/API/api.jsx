@@ -22,7 +22,6 @@ export const MainFetchApi = {
     const response = await fetch(urlForSuggest, options);
     const text = await response.text();
     const companies = JSON.parse(text);
-    // console.warn("companies.suggestions", companies);
     return companies.suggestions;
   },
 };
